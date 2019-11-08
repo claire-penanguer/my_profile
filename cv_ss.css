@@ -1,0 +1,291 @@
+* {
+    font-family: Helvetica Neue, sans-serif;
+    color: #191919;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    margin-top: 10px;
+    justify-content: left;
+}
+
+body {
+    background: #FCFCFC;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+footer {
+    width: 100%;
+    padding: 10vh;
+    background: #4f4f4f;
+    background-position: center;
+    background-size: 100%;
+    box-shadow: 0px 0px 15px #333;
+    margin-top: 5vh;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: xxx-large;
+    margin: auto;
+}
+
+section {
+    border-radius: 4px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90vh;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    /*box-shadow: 0px 0px 10px #bbb;*/
+    /*background-color: #fff;*/
+}
+
+section h2 {
+    margin: 20px 0;
+    width: 100%;
+}
+
+section>div {
+    width: 100%;
+}
+
+.prez a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background: #B22222;
+
+    border-radius: 5px;
+    border: solid 2px #B22222;
+    transition: background 0.3s;
+}
+
+.div-shadow {
+    background-color: white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+
+.contact-flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.contact-flex p:first-child {
+    flex: 0 0 40%;
+}
+
+.contact-flex p:last-child {
+    flex: 0 0 60%;
+}
+
+.link-mail:hover
+
+/*mail*/
+    {
+    color: #B22222;
+}
+
+
+.prez {
+    border-bottom: none;
+    margin-left: auto;
+    padding: 5px 20px;
+}
+
+.contact {
+    margin-right: auto;
+    padding: 10px;
+}
+
+.prez a:hover {
+    color: #B22222;
+    background-color: #fff;
+    border: 2px solid #B22222;
+    box-shadow: 0px 0px 20px #666;
+}
+
+/* Media queries pour tablet & phones */
+
+/* Pc */
+@media only screen and (min-device-width : 769px) {
+
+    /* Styles pour cette Media Queries */
+    section {
+        width: 85%;
+        /*box-shadow: 0px 0px 10px #bbb;*/
+    }
+
+    header {
+        width: 100%;
+        height: 400px;
+        background: url("images/banner.jpg") #4f4f4f;
+        background-position: center;
+        background-size: 100%;
+        box-shadow: 0px 0px 15px #333;
+        display: flex;
+    }
+
+    .photo {
+        display: flex;
+        padding: 50px;
+    }
+
+    .photo img {
+        margin: auto;
+        width: 300px;
+        height: 300px;
+        border: 3px solid #fff;
+        box-shadow: 0px 0px 10px #777;
+        border-radius: 50%;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.73);
+    }
+
+    header .title {
+        width: -webkit-fill-available;
+        white-space: nowrap;
+        display: flex;
+    }
+
+    .div-responsive {
+        /*width: calc(100% - 50px);*/
+        margin: 10px 25px;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .div-responsive-demi {
+        width: 50%;
+    }
+
+    .prez {
+        border-right: 2px solid #ccc;
+    }
+}
+
+
+.swiper-container {
+    width: calc(100% - 20px);
+    max-width: 800px;
+    height: 375px;
+    border-radius: 8px;
+}
+
+.swiper-slide {
+    background-size: cover !important;
+    background-position: center;
+    display: flex;
+}
+
+.swiper-slide.slide1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/Squadeasy.jpg);
+}
+
+.swiper-slide.slide2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/Nicolas_illu.jpg);
+}
+
+.swiper-slide.slide3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(images/deloitte_illustration.jpg);
+}
+
+.inner-slide {
+    margin: auto;
+    text-align: center;
+}
+
+.inner-slide h3,
+.inner-slide li {
+    color: white;
+}
+
+/* Règle le problème des differences de width, + du style */
+.fas, .far {
+    width: 1em;
+    color: #B22222;
+}
+
+/* Phone */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /* Styles pour cette Media Queries */
+    section {
+        width: 95%;
+        /*box-shadow: 0px 0px 10px #bbb;*/
+    }
+
+    header {
+        text-align: center;
+        background: url("images/banner.jpg") #4f4f4f;
+        background-position: center;
+        background-size: 100%;
+        box-shadow: 0px 0px 15px #333;
+        padding: 20px 10px;
+    }
+
+    .photo {
+        text-align: center;
+    }
+
+    .photo img {
+
+        width: 300px;
+        height: 300px;
+        box-shadow: 0px 0px 10px #777;
+        border-radius: 50%;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.73);
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .div-responsive {
+        justify-content: center;
+        padding-bottom: 20px;
+        padding: 10px;
+        text-align: center;
+        margin: 8px 10px;
+    }
+}
+
+
+
+/* Tablet */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+    /* Styles pour cette Media Queries */
+}
